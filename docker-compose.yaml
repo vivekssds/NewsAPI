@@ -1,0 +1,13 @@
+version: "3.4"
+
+services:
+
+  # common files image
+  # Layer 1 for multistage docker builder pattern
+  # formats and loads files shared across all projects like common-files
+  news_common:
+    image: NewsApi:latest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: [ "echo" ]
