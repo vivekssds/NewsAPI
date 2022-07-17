@@ -1,0 +1,13 @@
+{
+  "CASSANDRA_HOST": [
+    "127.0.0.1"
+  ],
+  "CASSANDRA_PORT": 9042,
+  "KEY_SPACE": "news",
+  "REDIS_HOST": "127.0.0.1",
+  "REDIS_PORT": 6379,
+  "REDIS_KEY": "news",
+  "NUMBER_OF_NEWS": 50,
+  "CASSANDRA_QUERY": "select  articleid,headline,newscategory,newssubcategory,numofhits,newspublishedtime from newsfeedaggconsumerzone_tbl ;"
+}
+

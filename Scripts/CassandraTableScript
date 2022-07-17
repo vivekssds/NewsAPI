@@ -1,0 +1,11 @@
+Create Table keyspace1.newsfeedaggconsumerzone_tbl(
+	articleid int,
+	headline text,
+	newscategory text,
+ 	newssubcategory text,
+ 	newspublishedtime timestamp,
+ 	numofhits int,
+ 	feedaggregatedtime timestamp,
+	feedaggregatedhour time,
+	Primary Key(articleid)
+);
